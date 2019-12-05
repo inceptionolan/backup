@@ -1,0 +1,5 @@
+-If member fun is constant we can not change the state of object only in that constant member fun.
+-Non constant function we can change state of object in non constant member function.
+-Const object c3 can call constant member function as type of this pointer is same.
+-Const object can not call non constant member fun as their type of this is differrent.
+

@@ -1,0 +1,5 @@
+Display departments in which number of emps > 2
+
+SELECT d.deptno from DEPT d where d.deptno= ANY (SELECT e.deptno from EMP e group by e.deptno having count(deptno)>2 );
+
+

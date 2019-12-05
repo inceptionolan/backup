@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+class Matrix
+{
+	int **arr;
+	int row;
+	int col;
+	Matrix(int r, int c)
+	{
+		this->row=r;
+		this->col=c;
+		arr = new int *[this->row]
+		for(int i=0;i<this->col;i++)
+			arr*[i] = new int[]; 
+	}
+	void accept()
+	{
+		for(int i=0;i<this->row;i++)
+		{
+			for(int i=0;i<this->col;i++)
+			{
+				cout<<"Enter number : ";
+				cin>>this->arr[row][col];	
+			}
+		}
+	}
+	void accept()
+		{
+			for(int i=0;i<this->row;i++)
+			{
+				for(int i=0;i<this->col;i++)
+				{
+					cout<<this->arr[row][col]<<"\t";	
+				}
+				cout<<endl;
+			}
+		}
+};//end of class
+	
+
+int main()
+{
+	Matrix m1(2,3);
+	
+
+}//end of main

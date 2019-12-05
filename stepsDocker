@@ -1,0 +1,8 @@
+sudo  docker build . -t mydb -->>Build an image from a Dockerfile. this you will create image named mydb. -t represents tab. to run this command you have to be in same file as docker file
+
+sudo docker container run -d -p 3307:3306 --name mydb_c mydb --->> it will create a container named mydb_c. 3307:3306 represents port forwarding
+
+mysql -u root -h localhost --port=3307 --protocol=tcp -p --->> to run mysql interface. it will listen on port 3307. here mysql uses TCP protocol.
+
+
+

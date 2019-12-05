@@ -1,0 +1,20 @@
+DROP PROCEDURE IF EXISTS try_2;
+
+DELIMITER $$
+CREATE PROCEDURE try_2()
+
+BEGIN
+	DECLARE v_p1 INT;
+	DECLARE v_ar INT;
+	DECLARE v_p3 INT DEFAULT 5;
+	
+	SET v_p1 = 10;
+
+	SELECT v_p1 * v_p3 INTO v_ar;
+	INSERT INTO results VALUES (v_ar, 'AREA');
+END;
+
+
+
+$$
+DELIMITER ;

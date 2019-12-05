@@ -1,0 +1,9 @@
+Steps to install chromedriver on current path
+
+Download driver for your chrome version from http://chromedriver.storage.googleapis.com/index.html
+
+Extract it and copy "chromedriver" file from that folder to /usr/local/sbin/
+
+Give Executable permissio to /usr/local/sbin/chromedriver
+
+ 

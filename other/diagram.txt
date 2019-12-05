@@ -1,0 +1,40 @@
+@startuml
+# PlantUML Editor
+
+1. select template
+2. write uml diagram
+
+@startuml
+
+left to right direction
+
+actor Student
+
+Student --> (1. Login)
+Student --> (2. FeedBack)
+Student --> (3. Student Info)
+Student --> (4. Performance)
+Student --> (5. Cource Register)
+
+actor Staff
+
+Staff --> (1. Login)
+Staff --> (3. Student Info)
+Staff --> (6. Insert Record)
+Staff --> (7. Own Info)
+
+actor Director
+
+Director --> (1. Login)
+Director --> (2. FeedBack)
+Director --> (3. Student Info)
+Director --> (4. Performance)
+Director --> (5. Cource Register)
+Director --> (7. Own Info)
+
+
+
+
+
+@enduml
+@enduml

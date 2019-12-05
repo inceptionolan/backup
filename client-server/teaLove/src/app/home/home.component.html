@@ -1,0 +1,27 @@
+<button (click)="GoToRegister()" type="button" class="btn btn-primary">Add New Record</button>
+<table border = "1" class="table table-hover" style="width: 100%">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Update data</th>
+            <th>Delete data</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let d of morya">
+            <td>{{d.no}}</td>
+            <td>{{d.name}}</td>
+            <td>{{d.address}}</td>
+            <td><a href="/edit">Edit</a></td>
+            <td><a href="/edit">Delete</a></td>
+
+        </tr>
+    </tbody>
+</table> 
+
+
+

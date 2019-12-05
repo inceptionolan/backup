@@ -1,0 +1,90 @@
+Create one master machine and at least one node machine.
+you can create 3 os in your virtual box. one as master and other as node.
+
+Keep all three machine running.
+Connect to all machine using ssh using 3 terminal tab --->>>ssh uname@ip_of_virtual_machine 
+
+
+Follow kubernetes. pdf for cluster creation.
+
+run all command on all 3 terminal tab.
+
+
+---------------------------------------------------------------------------------------------------------------------
+if you want to remove previous work and configuration  on node 
+sudo kubeadm reset 
+-----------------------------------------------------------------------------------
+create master:
+
+sudo swapoff -a
+
+fire cmd from pdf to create master .
+then 3 cmd to make final set up.
+
+
+kubectl version -->>>>>> check clinet/server info
+
+
+-----------------------------------------------------------------
+Create worker:
+join as worker by join cmd
+
+----------------------------------------------------------
+master:
+
+kubectl get nodes/svc/deployments/nodes
+
+install kube-ops-view plug-in (go to google for specific instruction. use git clone)
+kubeclt apply -f deploy/
+---------------------------------------------------------------------------------------------------------------------
+
+search flannel kubernetes url from google.
+cmd that url on terminal. this is for worker initilisaion.
+
+
+kubectl get nodes --->>>check status change
+
+-----------------------------------------------------------------------------------------------------------
+
+create pod.yml
+kubectl get pods --->> it should have two pods of kube-ops plug-in
+
+kubectl apply -f pod.yml
+kubectl describe pod my_pod_name
+
+curl ip_of_pod@port
+
+kubectl delete pod pod_name  --->>> if 
+
+
+on browser master_nodeip@32000
+
+-------------------------------------------
+
+kubectl apply -f pod.yml
+
+
+
+curl http://ip_of_pod@port
+
+-----------------------------------------------------------------------------------------
+
+create service : create service.yml -->>refer pdf
+kubectl apply -f service.yml
+
+kubectl describe service  my_service_name --->>get nodeport
+
+goto browser ip:nodeport
+
+
+create service.yml  ---->>run it
+
+
+
+
+
+
+
+
+
+
